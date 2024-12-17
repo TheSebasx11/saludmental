@@ -119,7 +119,7 @@ export const Gallery = (props) => {
   };
 
   return (
-    <div id="portfolio" className="text-center">
+    <div id="resultados" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Resultados Parciales</h2>

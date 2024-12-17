@@ -24,7 +24,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="principal-container">
       <Navigation />
       <Header data={landingPageData.Header} />
    {/*    <Features data={landingPageData.Features} /> */}

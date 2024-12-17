@@ -261,19 +261,19 @@ header .intro-text {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
-#about {
+#infografias {
   padding: 100px 0;
 }
-#about h3 {
+#infografias h3 {
   font-size: 22px;
   margin: 0 0 20px;
 }
-#about h2 {
+#infografias h2 {
   position: relative;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
-#about h2::after {
+#infografias h2::after {
   position: absolute;
   content: "";
   background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
@@ -282,13 +282,13 @@ header .intro-text {
   bottom: 0;
   left: 0;
 }
-#about .about-text li {
+#infografias .about-text li {
   margin-bottom: 6px;
   margin-left: 6px;
   list-style: none;
   padding: 0;
 }
-#about .about-text li:before {
+#infografias .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
   color: #5ca9fb;
@@ -296,30 +296,30 @@ header .intro-text {
   font-weight: 300;
   padding-right: 8px;
 }
-#about img {
+#infografias img {
   width: 520px;
   margin-top: 10px;
   background: #fff;
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
 }
-#about p {
+#infografias p {
   line-height: 24px;
   margin: 30px 0;
 }
 /* Services Section */
-#services {
+#encuesta {
   padding: 100px 0;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: #fff;
 }
-#services .service-desc {
+#encuesta .service-desc {
   margin: 10px 10px 20px;
 }
-#services h2 {
+#encuesta h2 {
   color: #fff;
 }
-#services .section-title h2::after {
+#encuesta .section-title h2::after {
   position: absolute;
   content: "";
   background: rgba(255, 255, 255, 0.3);
@@ -329,7 +329,7 @@ header .intro-text {
   margin-left: -30px;
   left: 50%;
 }
-#services i.fa {
+#encuesta i.fa {
   font-size: 42px;
   width: 120px;
   height: 120px;
@@ -339,19 +339,19 @@ header .intro-text {
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
-#services h3 {
+#encuesta h3 {
   font-weight: 500;
   padding: 5px 0;
   color: #fff;
 }
-#services p {
+#encuesta p {
   color: rgba(255, 255, 255, 0.75);
 }
-#services .service-desc {
+#encuesta .service-desc {
   margin-bottom: 40px;
 }
 /* Portfolio Section */
-#portfolio {
+#resultados {
   padding: 100px 0;
 }
 .portfolio-item {
@@ -608,8 +608,11 @@ label {
 }
 
 @media (max-width: 768px) {
-  #about img {
+  #infografias img {
     margin: 50px 0;
+  }
+  .principal-container{
+    width: fit-content;
   }
 }
 
@@ -619,4 +622,6 @@ label {
     display: "flex";
     flex-direction: column;
   }
+
+  
 }

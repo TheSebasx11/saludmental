@@ -3,8 +3,8 @@
     padding: 20px;
     width: 111%;
   }
-  #about,
-  #services,
+  #infografias,
+  #encuesta,
   #testimonials,
   #team,
   #contact,
@@ -12,7 +12,7 @@
     width: 111%;
   }
 
-  #portfolio {
+  #resultados {
     width: 110%;
   }
 }

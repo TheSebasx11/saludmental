@@ -17,9 +17,12 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            Salud Mental
-          </a>{" "}
+          <div style={{display: 'flex', gap: '.5em'}}>
+            <img src="img/custom/logo centro.jpeg" alt="" style={{width: '3em'}} />
+            <a className="navbar-brand page-scroll" href="#inicio">
+              Salud Mental
+            </a>
+          </div>
         </div>
 
         <div
@@ -33,17 +36,17 @@ export const Navigation = (props) => {
               </a>
             </li> */}
             <li>
-              <a href="#about" className="page-scroll">
+              <a href="#infografias" className="page-scroll">
                 Infografia
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
+              <a href="#encuesta" className="page-scroll">
                 Encuesta
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll">
+              <a href="#resultados" className="page-scroll">
                 Resultados encuesta
               </a>
             </li>

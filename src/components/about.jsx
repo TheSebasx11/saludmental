@@ -1,6 +1,18 @@
 import React, { useState } from "react";
+// Core viewer
+import { Viewer } from "@react-pdf-viewer/core";
+import { Worker } from "@react-pdf-viewer/core";
+
+// Plugins
+import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
+
+// Import styles
+import "@react-pdf-viewer/core/lib/styles/index.css";
+import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 
 export const About = (props) => {
+  // Create new plugin instance
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
   const [openIndex, setOpenIndex] = useState(0);
 
   const toggleItem = (index) => {
@@ -8,7 +20,7 @@ export const About = (props) => {
   };
 
   return (
-    <div id="about">
+    <div id="infografias">
       <div className="container">
         <h2>Psicoeducación sobre algunas problematicas</h2>
         <h3>{props.data ? props.data.paragraph : "loading..."}</h3>
@@ -38,9 +50,26 @@ export const About = (props) => {
       </div>
       {/* ------------- */}
       <br />
+      <div className="container">
+        <h2>Prevención del consumo de sustancias psicoactivas</h2>
+        {/* <h3>Rutas hechas para ti</h3> */}
+
+        <div>
+          <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
+            <Viewer
+              fileUrl="Infografia 2.pdf"
+              theme={'dark'}
+              plugins={[
+                // Register plugins
+                defaultLayoutPluginInstance,
+              ]}
+            />
+          </Worker>
+        </div>
+      </div>
       <br />
       <div className="container">
-        <h2>Rutas de Atencion </h2>
+        <h2>Rutas de Atención </h2>
         <h3>Rutas hechas para ti</h3>
         <div
           className="row"
